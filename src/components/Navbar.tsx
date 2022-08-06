@@ -6,19 +6,20 @@ const Avatar = () => <h1>avatar</h1>;
 
 const Navbar = () => {
   return (
-    <div className="wrapper py-10 flex justify-between items-center">
-      {/* <Link href="/" passHref> */}
-      {/* <Image
+    <nav className="bg-gray-300/20 wrapper py-5 flex justify-between items-center">
+      <Link href="/" passHref>
+        {/* <Image
           src="/static/brand/return0-logo.png"
           width="100"
           height="60"
           alt=""
         /> */}
-      {/* </Link> */}
+        <a className="text-3xl">LOGO</a>
+      </Link>
       <div className="rounded-full-img">
         <Image src="/static/images/profile.jpg" width={50} height={50} alt="" />
       </div>
-    </div>
+    </nav>
   );
 };
 
