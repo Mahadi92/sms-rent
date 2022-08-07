@@ -4,15 +4,15 @@
   @apply max-w-7xl m-auto px-4 xl:px-0;
 }
 
-// ---------- sizing ---------- //
+// ---------- Sizing ---------- //
 h1,
 .heading{
-  @apply text-4xl text-font m-0 leading-none;
+  @apply text-4xl m-0 leading-none;
 }
 
 h2,
 .subheading{
-  @apply text-base text-font-200 m-0 leading-none;
+  @apply text-base m-0 leading-none;
 }
 
 // ----------- Buttons ----------- //

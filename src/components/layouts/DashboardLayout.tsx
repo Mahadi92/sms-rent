@@ -9,7 +9,7 @@ interface PropType {
 }
 
 const DashboardLayout: React.FC<PropType> = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const windowSize = useWindowSize();
@@ -38,6 +38,8 @@ const DashboardLayout: React.FC<PropType> = ({ children }) => {
               !isMobileOpen
                 ? "-translate-x-60 lg:translate-x-0"
                 : "translate-x-0"
+            } ${
+              !isOpen ? "w-full lg:w-20" : "w-auto"
             } transition ease-in-out delay-150`}
           >
             <Sidebar
